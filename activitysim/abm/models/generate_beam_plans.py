@@ -87,17 +87,8 @@ def get_trip_coords(trips, zones, persons, size=500):
     trips['origin_x'] = df['origin_x']
     trips['origin_y'] = df['origin_y']
 
-    # retain home coords from urbansim data bc they will typically be
-    # higher resolution than zone, so we don't need the semi-random coords
-    trips = pd.merge(
-        trips, persons[['home_x', 'home_y']],
-        left_on='person_id', right_index=True)
-    trips['origin_purpose'] = trips.groupby(
-        'person_id')['purpose'].shift(periods=1).fillna('Home')
-    trips['x'] = trips.origin_x.where(
-        trips.origin_purpose != 'Home', trips.home_x)
-    trips['y'] = trips.origin_y.where(
-        trips.origin_purpose != 'Home', trips.home_y)
+    trips['x'] = trips.origin_x
+    trips['y'] = trips.origin_y
 
     return trips
 
