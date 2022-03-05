@@ -68,9 +68,9 @@ def get_trip_coords(trips, zones, persons, size=500):
     # that are not empty geometries (i.e. contain no blocks)
     rand_point_zones = {}
     for zone in zones[
-            ~(zones['geometry'].is_empty | zones['geometry'].isna())].TAZ:
+            ~(zones['geometry'].is_empty | zones['geometry'].isna())].zone_id:
         size = 500
-        polygon = zones[zones.TAZ == zone].geometry
+        polygon = zones[zones.zone_id == zone].geometry
         points = sample_geoseries(polygon, size, overestimate=2)
         rand_point_zones[zone] = points
 
