@@ -1,0 +1,8 @@
+vehicleTypeId,seatingCapacity,standingRoomCapacity,lengthInMeter,primaryFuelType,primaryFuelConsumptionInJoulePerMeter,primaryFuelCapacityInJoule,secondaryFuelType,secondaryFuelConsumptionInJoulePerMeter,secondaryFuelCapacityInJoule,automationLevel,maxVelocity,passengerCarUnit,rechargeLevel2RateLimitInWatts,rechargeLevel3RateLimitInWatts,vehicleCategory
+CAR,4,0,4.5,gasoline,3655.98,3655980000,,,,,,,,,
+SUV,6,0,5.5,gasoline,3655.98,3655980000,,,,,,,,,
+BUS-DEFAULT,50,50,12,diesel,20048,30000000000,,,,,,,,,
+SUBWAY-DEFAULT,50,50,12,electricity,46800,46800000000,,,,,,,,,
+TRAM-DEFAULT,50,50,7.5,electricity,3600,3600000000,,,,,,,,,
+RAIL-DEFAULT,50,50,7.5,diesel,210518,6E+11,,,,,,,,,
+CABLE_CAR-DEFAULT,50,50,7.5,electricity,1116,1116000000,,,,,,,,,
