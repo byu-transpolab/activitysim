@@ -74,3 +74,8 @@ _test_est
 
 # wfrc_asim_scenario
 wfrc_asim_scenario
+
+# supercomputer stuff
+old_slurm/
+slurm*
+./*.sh
