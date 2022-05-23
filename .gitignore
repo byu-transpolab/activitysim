@@ -78,3 +78,6 @@ wfrc_asim_scenario
 # supercomputer stuff
 old_slurm/
 slurm*
+
+.Rhistory
+.Rproj.user
