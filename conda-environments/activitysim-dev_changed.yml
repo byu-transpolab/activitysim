@@ -5,18 +5,18 @@ channels:
 dependencies:
 - python=3.9
 - pip
-- numpy >= 1.16.1
-- pandas >= 1.1.0
-- pyarrow >= 2.0
-- openmatrix >= 0.3.4.1
-- pyyaml >= 5.1
-- pytables >= 3.5.1
-- cytoolz >= 0.8.1
-- psutil >= 4.1
-- requests >= 2.7
-- numba >= 0.51.2
-- orca >= 1.6
-- larch >= 5.5.8
+- numpy
+- pandas
+- pyarrow
+- openmatrix
+- pyyaml
+- pytables
+- cytoolz
+- psutil
+- requests
+- numba
+- orca
+  #- larch
 - geopandas
 - jupyterlab
 - matplotlib
