@@ -1,5 +1,5 @@
 # Environment for development
-# usage: $ conda env create --file=activitysim-dev.yml -n ASIM-DEV-TMP
+# usage: $ conda env create --file=activitysim-dev.yml -n ASIM_DEV
 channels:
 - conda-forge
 dependencies:
@@ -31,4 +31,5 @@ dependencies:
 - bump2version
 
 - pip:
+  - populationsim
   - -e ..
