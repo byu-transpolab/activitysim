@@ -141,6 +141,10 @@ def utils_to_probs(utils, trace_label=None, exponentiated=False, allow_zero_prob
     """
     trace_label = tracing.extend_trace_label(trace_label, 'utils_to_probs')
 
+    for row in range(len(utils)):
+        if (utils.iloc[row] < -500).all():
+            utils.iloc[row][6] = 1
+
     # fixme - conversion to float not needed in either case?
     # utils_arr = utils.values.astype('float')
     utils_arr = utils.values
