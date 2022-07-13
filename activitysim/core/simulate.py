@@ -984,9 +984,6 @@ def eval_nl(choosers, spec, nest_spec, locals_d, custom_chooser, estimator,
         tracing.trace_df(raw_utilities, '%s.raw_utilities' % trace_label,
                          column_labels=['alternative', 'utility'])
         
-    for row in range(len(raw_utilities)):
-        if (raw_utilities.iloc[row] < -500).all():
-            raw_utilities.iloc[row][6] = 1
 
     # exponentiated utilities of leaves and nests
     nested_exp_utilities = compute_nested_exp_utilities(raw_utilities, nest_spec)
